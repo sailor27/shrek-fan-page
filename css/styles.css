@@ -1,0 +1,117 @@
+/*fonts
+font-family: 'Audiowide', cursive;
+font-family: 'Exo 2', sans-serif;*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  background-color: #589b00;
+}
+
+ul {
+  list-style: none;
+  background-color: #ffffdd;
+}
+
+img {
+  border-radius: 15px;
+  max-width: 250px;
+  padding: 10px;
+}
+
+
+.ice-cream {
+  background: url(../img/greentea.png) no-repeat;
+  width: 100%;
+  height: 500px;
+}
+
+.top {
+  position: relative;
+
+
+}
+
+.top h1{
+  font-family: 'Audiowide', cursive;
+  font-size: 8em;
+  position: absolute;
+  top: 100px;
+  left: 190px;
+}
+
+nav {
+  float: right;
+  width: 20%;
+  margin-top: 4em;
+}
+
+.col-1 {
+  float:left;
+
+  width: 40%;
+  z-index: 1;
+}
+
+.col-2 {
+  float: right;
+  width: 60%;
+}
+
+.col-2 img{
+  width: 100%
+  height:2em;
+  display: inline;
+}
+
+.col-2 li{
+  float: right;
+
+}
+
+footer {
+  clear: both;
+}
+/*media queries*/
+@media screen and (min-width:1020px) {
+  body{
+    background: url(../img/windows.jpg) no-repeat;
+  }
+}
+@media screen and (max-width:1019px) and (min-width:600px) {
+  body {
+    background-color: #ffffdd;
+  }
+
+}
+
+@media screen and (max-width:599px) and (min-width:400px) {
+  body {
+    background-color: #bcff64;
+  }
+  .ice-cream {
+
+    background-size: 50%;
+
+  }
+}
+
+@media screen and (max-width:399px) {
+    body {
+      background-color: #bcff64;
+      color: #E3FF00;
+    }
+
+    .ice-cream{
+      display: none;
+    }
+
+    img {
+      max-width: 25%
+    }
+
+
+  }
